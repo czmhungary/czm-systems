@@ -1,0 +1,332 @@
+
+/* =========================================
+   ALAPBEÁLLÍTÁSOK
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #171a1e;
+    color: #d2d6da;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+a {
+    color: #82bde9;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #b99bd9;
+}
+
+a:hover {
+    color: #b5dcfa;
+    text-decoration: underline;
+}
+
+/* =========================================
+   OLDAL KERET
+   ========================================= */
+
+#page {
+    display: flex;
+    flex-direction: column;
+
+    width: calc(100% - 36px);
+    max-width: 1600px;
+    min-height: calc(100vh - 36px);
+    margin: 18px auto;
+
+    background: #24282d;
+    border: 1px solid #0c0e10;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.45);
+}
+
+/* =========================================
+   FEJLÉC
+   ========================================= */
+
+#header {
+    min-height: 82px;
+    padding: 14px 20px;
+
+    color: #ffffff;
+    background: linear-gradient(135deg, #142535, #1b3042);
+
+    border-bottom: 4px solid #3b5870;
+}
+
+#header h1 {
+    margin: 8px 0 5px;
+    font-size: 27px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+#header p {
+    margin: 0;
+    color: #c4d5e3;
+    line-height: 1.4;
+}
+
+/* =========================================
+   NAVIGÁCIÓ
+   ========================================= */
+
+#nav {
+    padding: 9px 12px;
+
+    background: #292e34;
+    border-bottom: 1px solid #111518;
+}
+
+#nav a {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 6px 12px;
+
+    color: #cbd8e2;
+    font-weight: bold;
+    text-decoration: none;
+
+    background: linear-gradient(#3b4249, #30363c);
+    border: 1px solid #181c20;
+    border-radius: 3px;
+
+    transition: background 0.15s ease,
+                border-color 0.15s ease;
+}
+
+#nav a:hover {
+    color: #ffffff;
+    background: #465665;
+    border-color: #60788b;
+}
+
+/* =========================================
+   HÁROMHASÁBOS TARTALOM
+   ========================================= */
+
+#content {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    flex: 1;
+}
+
+#left,
+#main,
+#right {
+    display: table-cell;
+    vertical-align: top;
+    padding: 15px;
+}
+
+#left {
+    width: 20%;
+    background: #292e33;
+    border-right: 1px solid #171b1f;
+}
+
+#main {
+    width: 60%;
+    background: #22262b;
+}
+
+#right {
+    width: 20%;
+    background: #292e33;
+    border-left: 1px solid #171b1f;
+}
+
+/* =========================================
+   DOBOZOK
+   ========================================= */
+
+.box {
+    margin-bottom: 15px;
+
+    background: #30363c;
+    border: 1px solid #171c20;
+    border-radius: 3px;
+
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+.box h2 {
+    margin: 0;
+    padding: 8px 10px;
+
+    color: #f0f4f7;
+    font-size: 14px;
+    font-weight: bold;
+
+    background: linear-gradient(#304b61, #263e51);
+    border-bottom: 1px solid #182b39;
+}
+
+.box .inside {
+    padding: 10px;
+}
+
+/* =========================================
+   SZEKCIÓCÍMEK
+   ========================================= */
+
+h2.section {
+    margin: 3px 0 12px;
+    padding-bottom: 6px;
+
+    color: #91bad9;
+    font-size: 18px;
+    font-weight: bold;
+
+    border-bottom: 1px dotted #58616a;
+}
+
+/* =========================================
+   SZÖVEGEK
+   ========================================= */
+
+p {
+    line-height: 1.55;
+}
+
+ul {
+    margin: 6px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+.small {
+    font-size: 11px;
+    color: #a3adb6;
+}
+
+/* =========================================
+   FIGYELMEZTETÉS
+   ========================================= */
+
+.notice {
+    padding: 10px;
+
+    color: #e5d49b;
+    background: #393425;
+    border: 1px dashed #8c7539;
+    border-radius: 3px;
+
+    line-height: 1.5;
+}
+
+/* =========================================
+   ÁLLAPOTJELZÉS
+   ========================================= */
+
+.status {
+    color: #80d998;
+    font-weight: bold;
+}
+
+/* =========================================
+   SZÁMLÁLÓ
+   ========================================= */
+
+.counter {
+    padding: 7px;
+
+    color: #65ed78;
+    background: #101512;
+    border: 1px solid #414b43;
+    border-radius: 2px;
+
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* =========================================
+   ELVÁLASZTÓ
+   ========================================= */
+
+hr {
+    height: 1px;
+    margin: 12px 0;
+
+    border: 0;
+    background: #505860;
+}
+
+/* =========================================
+   LÁBLÉC
+   ========================================= */
+
+#footer {
+    padding: 13px;
+
+    color: #aab2ba;
+    background: #292e34;
+
+    border-top: 1px solid #171b1f;
+
+    font-size: 11px;
+    text-align: center;
+}
+
+/* =========================================
+   LETÖLTÉS GOMB
+   ========================================= */
+
+.download-btn {
+    display: inline-block;
+
+    margin-top: 9px;
+    padding: 10px 25px;
+
+    color: #ffffff;
+    background: linear-gradient(#414950, #2c3238);
+
+    border: 1px solid #626d76;
+    border-radius: 3px;
+
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+
+    transition: background 0.15s ease,
+                border-color 0.15s ease,
+                box-shadow 0.15s ease;
+}
+
+.download-btn:visited {
+    color: #ffffff;
+}
+
+.download-btn:hover {
+    color: #ffffff;
+    background: linear-gradient(#267db5, #145b8b);
+    border-color: #4598ce;
+
+    box-shadow: 0 0 7px rgba(40, 135, 205, 0.35);
+
+    text-decoration: none;
+}
+
+.download-btn:active {
+    background: #104c73;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.45);
+}
