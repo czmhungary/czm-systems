@@ -330,3 +330,15 @@ hr {
     background: #104c73;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.45);
 }
+/* =========================================
+   KÖZÉPSŐ HÍREK SZÖVEGMÉRETE
+   ========================================= */
+
+#main {
+    font-size: 12px;
+}
+
+#main .notice {
+    font-size: 13px;
+    line-height: 1.35;
+}
